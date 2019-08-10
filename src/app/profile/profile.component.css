@@ -1,0 +1,156 @@
+* {
+	-webkit-box-sizing:  border-box;
+	-moz-box-sizing:  border-box;
+	box-sizing: border-box;
+}
+#navbar {
+	display: none;
+}
+.Container {
+	background-color: white;
+
+
+}
+.body {
+	margin-top: 2%;
+	padding: 10px;
+	width: 75%;
+	margin-left: 10%;
+	border: inset;
+	border-width: 1px;
+	position: absolute;
+	min-width: 200px;
+}
+.header {
+	width: 100%;
+	height: 40px;
+	background-color: white;
+	border-bottom: inset;
+	border-width: 1px;
+	border-bottom-color: black;
+}
+
+nav {
+	justify-content: left;
+	display: flex;
+	padding: 3px;
+}
+
+ul {
+	margin-top: 0;
+	margin-left: 0;
+	list-style: none;
+	float: left;
+	
+}
+
+li{
+	margin-right: 20px;
+
+}
+hr {
+	width: 100%;
+	border-width: 1px;
+}
+
+h2, hr {
+	float: left;
+}
+
+.bodyProfile {
+	margin-top: 5%;
+	float: left;
+	width: 80%;
+}
+
+.labels .form-control {
+	padding-top: 2em;
+}
+.form-control {
+	width: 40%;
+}
+.forgotPassword {
+	padding-top: 0.5em;
+}
+
+.btn.btn-primary {
+	margin-top: 2em;
+	padding: 0.5em;
+}
+.address {
+	width: 45%;
+}
+.country {
+	width: 45%;
+}
+.city  {
+	width: 50%;
+	float:left;
+}
+.postCode {
+	width: 50%;
+	float:left;
+}
+.state  {
+	float: right;
+	width: 50%;
+}
+.countryChange {
+	float: right;
+	width: 50%;
+}
+.city input {
+	width: 80%;
+	height: 40px;
+}
+.state input {
+	width: 80%;
+	height: 40px;
+}
+.changeLegalName {
+	font-size: 10px;
+}
+table {
+	display: none;
+}
+
+.fa.fa-sign-out{
+	font-size: 20px;
+	margin-top: 0;
+	float: right;
+}
+@media (max-width: 640px){
+	#navbar{
+		display: block;
+		margin-left: 10%;
+
+	}
+	nav{
+		display: none;
+	}
+	#navbar button {
+		display: flex;
+		align-items: center;
+		width: 80%;	
+		margin: 1px;
+		text-align: center;
+
+	}
+
+}
+
+@media (max-width: 800px){
+	table {
+		display: block;
+	}
+	.addressStreet {
+		display: none;
+	}
+	.state, .countryChange{
+		float: left;
+	}
+}
+
+input, textarea {
+	min-width: 100px;
+}

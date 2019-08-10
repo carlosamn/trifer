@@ -1,0 +1,135 @@
+
+<div class="Container">
+<div class="header"></div>
+<div class="body">
+<nav>
+  <ul class="nav nav-pills">
+	<li  class="nav-item"><a [routerLink]="['/profile']">My profile</a></li>
+	<li  class="nav-item"><a >Preferences</a></li>
+	<li  class="nav-item"><a>Security</a></li>
+	<li  class="nav-item"><a>Account activity</a></li>
+	<li  class="nav-item"><a>Liked accounts</a></li>
+	<li  class="nav-item"><a>API access</a></li>
+	<li  class="nav-item"><a>Limits</a></li>
+  </ul>
+  
+</nav>
+<a (click)="logout()"><i class="fa fa-sign-out"></i></a>
+
+<div id ="navbar">
+						<button type="button" class="btn btn-primary" 
+						aria-controls="collapseManual" [routerLink]="['/profile']">My profile
+						</button>
+						<button type="button" class="btn btn-primary" 
+							aria-controls="collapseManual">Preferences
+						</button>
+						<button type="button" class="btn btn-primary" 
+						aria-controls="collapseManual">Security
+						</button>
+						<button type="button" class="btn btn-primary" 
+							aria-controls="collapseManual">Account activity
+						</button>
+						<button type="button" class="btn btn-primary" 
+							aria-controls="collapseManual">Liked accounts
+						</button>
+						<button type="button" class="btn btn-primary" 
+							aria-controls="collapseManual">API access
+						</button>
+						<button type="button" class="btn btn-primary" 
+							aria-controls="collapseManual">Limits
+						</button>
+						
+					 </div> 
+<hr>
+<app-profile-header></app-profile-header>
+<div class="bodyProfile">
+	<h2 class="myProfileLabel">My Profile</h2><br/>
+	<br/>
+	<hr class="hr">
+	<br/>
+	<span class="labels">Display name</span><br/>
+	<input class="form-control"><br/>
+	<span class="labels">Email address</span><br/>
+	<input class="form-control">
+	<span class="forgotPassword"><a > I can no logger access this email</a></span><br/>
+	<button class="btn btn-primary" value="Save">Save</button><br/>
+
+	<h2 class="myProfileLabel">Personal details</h2><br/>
+	<br/>
+	<hr class="hr">
+	<br/>
+	<span class="labels">Legal name</span><br/>
+	<input readonly class="form-control"><br/>
+	<span class="labels">Date of birth</span><br/>
+	<div class="col-10">
+    <input class="form-control" type="date" value="2011-08-19" id="example-date-input"><br/>
+  	</div>
+  	<span class="labels">Street address</span><br/>
+	<textarea class="form-control"></textarea> <br/>
+	<span class="labels">#Unit</span><br/>
+	<textarea class="form-control"></textarea> <br/>
+
+	<div class="addressStreet">
+	<div class="address" >
+		<div class="city" >
+			<span class="labels">City town</span>
+			<input  class="form-control">
+		</div >
+		<div class="state" >
+			<span class="labels">State</span>
+			<input  class="form-control">
+		</div>
+	</div>
+	<div class="country" >
+		<div class="postCode" >
+			<span class="labels">Post code</span>
+			<input  class="form-control">
+		</div ><br/>
+		<div class="countryChange" >
+			<span class="labels">Country<a >(change)</a></span>
+			<input readonly  class="form-control">
+		</div>
+	</div>
+	</div>
+
+	<table>
+		<tr>
+			<th>
+				<div class="city" >
+				<span class="labels">City town</span>
+				<input  class="form-control">
+				</div >
+			</th>
+		</tr>
+		<tr>
+			<th>
+				<div class="state" >
+				<span class="labels">State</span>
+				<input  class="form-control">
+				</div>
+			</th>
+		</tr>
+		<tr>
+			<th>
+				<div class="postCode" >
+				<span class="labels">Post code</span>
+				<input  class="form-control">
+				</div >
+			</th>
+		</tr>
+		<tr>
+			<th>
+				<div class="countryChange" >
+				<span class="labels">Country<a >(change)</a></span>
+				<input readonly  class="form-control">
+				</div>
+			</th>
+		</tr>
+	</table>
+
+
+	<span class="changeLegalName" >Change your legal name by verifying an ID document <a >here</a></span><br/>
+	<button class="btn btn-primary" value="Save">Save</button>
+</div>
+</div>
+</div>

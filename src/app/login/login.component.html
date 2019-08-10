@@ -1,0 +1,13 @@
+<div class="Container">
+  <div class="loginHeader">Sign in to Trifer</div>
+  <div class="loginBody">
+    <div class="form">
+      <input [(ngModel)]="user" class="form-control" placeholder="Email">
+      <input [(ngModel)]="password" class="form-control" placeholder="Password" type="password">
+      <input type="checkbox" class="form-check-input" name="">
+      <span class="remember">Remember me</span>
+      <button type="button" class="btn btn-block btn-outline-primary active" name="" (click)="login()">Sign in</button>
+      <span *ngIf="invalid" class="invalid">Invalid Email or Password!</span>
+    </div>
+  </div>
+</div>

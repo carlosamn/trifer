@@ -1,0 +1,68 @@
+.picture {
+	padding: 10px;
+	float: left;
+	height: 80px;
+	position: relative;
+	display: flex;
+	padding-right: 5px;
+	width: 90%;
+}
+
+.pictureContainer {
+	margin-right: 2em;
+	float: left;
+	width: 30%;
+}
+
+.btn.btn-primary {
+	background-color: white;
+	color: black;
+	height: 30px;
+	width: 35%;
+	float: right ;
+	min-width: 20%;
+}
+
+i {
+	float: left;
+	margin-right: 3px;
+}
+
+.changePicture {
+	font-size: 12px;
+	font-weight: bold
+}
+.maxSize {
+	font-size: 10px;
+}
+
+.changePassword {
+	margin-left: 4em;
+	width: 100%;
+}
+#button {
+	min-width: 130px;
+}
+table {
+	display: none;
+}
+
+@media (max-width: 640px){
+	table {
+		display: block;
+	}
+	.picture {
+		display: none;
+	}
+
+	#button {
+		float: left;
+		margin-left: 20%;
+	}
+}
+
+@media (max-width: 420px){
+	.changePassword, #button {
+		margin-left: 1em;
+	}
+}
